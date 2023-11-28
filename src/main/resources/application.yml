@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://servidorqa:1433;databaseName=perliexpress;TrustServerCertificate=True
+    username: perli
+    password: perli
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+      format_sql: true
+      dialect: org.hibernate.dialect.SQLServer2008Dialect
+      #hibernate:
+      #ddl-auto: create
